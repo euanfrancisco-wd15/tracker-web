@@ -1,0 +1,2 @@
+export async function api(path, options={}) { const isForm=typeof FormData!=="undefined"&&options.body instanceof FormData; const r=await fetch(path,{credentials:"same-origin",headers:{...(options.body&&!isForm&&{"Content-Type":"application/json"}),...options.headers},...options}); const d=await r.json().catch(()=>({})); if(!r.ok) throw Error(d.message||"Request failed"); return d; }
+export const json=(method,body)=>({method,body:JSON.stringify(body)});

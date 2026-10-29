@@ -1,0 +1,30 @@
+{
+  "name": "process-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Firestore-backed Express and React IoT kitchen-equipment process tracker",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"vite frontend --host 0.0.0.0\" \"node --watch server.js\"",
+    "build": "vite build frontend --outDir dist",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@fastify/busboy": "^3.2.4",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "firebase-admin": "^14.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "concurrently": "^9.2.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "vite": "^7.1.7"
+  }
+}
