@@ -44,8 +44,8 @@
 #include <hd44780ioClass/hd44780_I2Cexp.h>
 
 // ======================= SETTINGS (edit these) =======================
-const char* WIFI_SSID    = "FRANCISCO";
-const char* WIFI_PASS    = "12345678";
+const char* WIFI_SSID    = "";
+const char* WIFI_PASS    = "";
 // Same Wi-Fi as your computer: use the computer's address, NOT "localhost". Example: http://192.168.1.20:5000
 // Cloud: use the https address, for example https://your-app.onrender.com
 const char* SERVER_URL   = "http://192.168.68.117:5000";
